@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {   
+    --MAIN_BG-very-dark-blue: hsl(233, 47%, 7%);
+    --CARD_BG-dark-desaturated-blue: hsl(244, 38%, 16%);
+    --ACCENT-soft-violet: hsl(277, 64%, 61%);
+    --MAIN-HEADING_STATS-white: hsl(0, 0%, 100%);
+    --MAIN_P-slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --STAT_HEADING-slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+
+    /* FONT FAMILY */
+    --INTER: 'Inter';
+    --LEXEND_DECA: 'Lexend Deca';
+}
+
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-size: 15px;
+    font-family: var(--LEXEND_DECA);
+    background-color: var(--MAIN_BG-very-dark-blue);
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 75%;
+    margin: auto;
+    background-color: var(--CARD_BG-dark-desaturated-blue);
+    overflow: hidden;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+article {
+    padding: 5rem;
+    line-height: 1.5em;
+    color: var(--MAIN_P-slightly-transparent-white);
+}
+
+h1 {
+    font-family: var(--INTER);
+    color: var(--MAIN-HEADING_STATS-white);
+    font-weight: 700;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+h1 span {
+    color: var(--ACCENT-soft-violet);
+}
+
+article p {
+    width: 80%;
+    margin: 2em 0;
+    color: var(--MAIN_P-slightly-transparent-white);
+    font-family: var(--LEXEND_DECA);
+}
+
+.stat-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.stat {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--MAIN_P-slightly-transparent-white);
+    margin-top: 0.8em;
+}
+
+.stat-heading {
+    padding-top: 1em;
+    font-size: 32px;
+    font-family: var(--INTER);
+    font-weight: 400;
+    color: var(--MAIN-HEADING_STATS-white);
+}
+
+.image {
+    background-color: var(--ACCENT-soft-violet);
+    background-image: url('./images/image-header-desktop.jpg');
+    background-blend-mode:multiply;
+    background-size: cover;
+}
+
+.image-filter {
+    background-color: rgba(192, 102, 247, 0.23);
+}
+
+.image-filter img {
+    opacity: 0;
+}
